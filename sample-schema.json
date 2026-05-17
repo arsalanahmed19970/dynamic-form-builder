@@ -1,0 +1,103 @@
+{
+  "id": "sample-contact-form",
+  "name": "Contact Us",
+  "description": "A sample contact form demonstrating all field types and features",
+  "version": 1,
+  "createdAt": "2024-01-01T00:00:00.000Z",
+  "updatedAt": "2024-01-01T00:00:00.000Z",
+  "sections": [
+    {
+      "id": "section-personal",
+      "title": "Personal Information",
+      "description": "Your basic contact details",
+      "order": 0
+    },
+    {
+      "id": "section-message",
+      "title": "Your Message",
+      "description": "Tell us how we can help",
+      "order": 1
+    }
+  ],
+  "fields": [
+    {
+      "id": "field-1",
+      "type": "text",
+      "label": "Full Name",
+      "name": "fullName",
+      "placeholder": "John Doe",
+      "required": true,
+      "colSpan": 2,
+      "sectionId": "section-personal",
+      "validation": { "minLength": 2, "maxLength": 100 }
+    },
+    {
+      "id": "field-2",
+      "type": "email",
+      "label": "Email Address",
+      "name": "email",
+      "placeholder": "john@example.com",
+      "required": true,
+      "colSpan": 2,
+      "sectionId": "section-personal"
+    },
+    {
+      "id": "field-3",
+      "type": "dropdown",
+      "label": "Subject",
+      "name": "subject",
+      "required": true,
+      "colSpan": 2,
+      "sectionId": "section-message",
+      "options": [
+        { "label": "General Inquiry", "value": "general" },
+        { "label": "Technical Support", "value": "support" },
+        { "label": "Billing", "value": "billing" },
+        { "label": "Other", "value": "other" }
+      ]
+    },
+    {
+      "id": "field-4",
+      "type": "text",
+      "label": "Other Subject",
+      "name": "otherSubject",
+      "placeholder": "Please specify",
+      "required": false,
+      "colSpan": 2,
+      "sectionId": "section-message",
+      "conditional": {
+        "dependsOn": "subject",
+        "operator": "equals",
+        "value": "other"
+      }
+    },
+    {
+      "id": "field-5",
+      "type": "textarea",
+      "label": "Message",
+      "name": "message",
+      "placeholder": "Write your message here...",
+      "required": true,
+      "colSpan": 4,
+      "sectionId": "section-message",
+      "validation": { "minLength": 10, "maxLength": 1000 }
+    },
+    {
+      "id": "field-6",
+      "type": "toggle",
+      "label": "Subscribe to newsletter",
+      "name": "newsletter",
+      "required": false,
+      "colSpan": 2,
+      "defaultValue": false
+    },
+    {
+      "id": "field-7",
+      "type": "checkbox",
+      "label": "I agree to the terms and conditions",
+      "name": "terms",
+      "required": true,
+      "colSpan": 4
+    }
+  ]
+}

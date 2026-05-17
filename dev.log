@@ -1,0 +1,418 @@
+
+> form-builder@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.101:3000
+✓ Ready in 1134ms
+- Experiments (use with caution):
+  · optimizePackageImports
+
+○ Compiling / ...
+ GET / 307 in 5.8s (next.js: 5.0s, application-code: 799ms)
+ GET /forms 200 in 2.5s (next.js: 2.1s, application-code: 425ms)
+ GET /renderer 200 in 1121ms (next.js: 1063ms, application-code: 58ms)
+ GET /data 200 in 1080ms (next.js: 1003ms, application-code: 77ms)
+ GET /forms 200 in 69ms (next.js: 9ms, application-code: 60ms)
+ GET /renderer 200 in 50ms (next.js: 9ms, application-code: 41ms)
+ GET /data 200 in 55ms (next.js: 7ms, application-code: 48ms)
+ GET /forms 200 in 59ms (next.js: 8ms, application-code: 51ms)
+ GET /forms/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 2.7s (next.js: 2.6s, application-code: 75ms)
+○ Compiling /data/[formId] ...
+ GET /data/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 4.5s (next.js: 4.5s, application-code: 59ms)
+ GET /renderer/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 3.1s (next.js: 3.0s, application-code: 67ms)
+ GET /forms 200 in 57ms (next.js: 6ms, application-code: 51ms)
+ GET /forms/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 76ms (next.js: 22ms, application-code: 54ms)
+ GET /forms 200 in 41ms (next.js: 5ms, application-code: 36ms)
+ GET /renderer/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 78ms (next.js: 23ms, application-code: 55ms)
+ GET /data 200 in 88ms (next.js: 10ms, application-code: 78ms)
+ GET /data/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 96ms (next.js: 27ms, application-code: 70ms)
+ GET /renderer 200 in 49ms (next.js: 9ms, application-code: 40ms)
+ GET /renderer/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 81ms (next.js: 19ms, application-code: 62ms)
+ GET /data/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 102ms (next.js: 20ms, application-code: 82ms)
+ GET /data 200 in 48ms (next.js: 6ms, application-code: 42ms)
+ GET /data/fd68fb9c-b6b3-452a-af11-740ddd47cbb7 200 in 80ms (next.js: 24ms, application-code: 56ms)
+ GET /forms 200 in 46ms (next.js: 8ms, application-code: 39ms)
+ GET /forms/45df55d2-b43b-4183-9180-bdfdea3e773b 200 in 75ms (next.js: 22ms, application-code: 53ms)
+ GET /forms 200 in 53ms (next.js: 7ms, application-code: 46ms)
+ GET /forms/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 132ms (next.js: 46ms, application-code: 86ms)
+ GET /data/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 131ms (next.js: 36ms, application-code: 95ms)
+ GET /renderer 200 in 92ms (next.js: 14ms, application-code: 78ms)
+ GET /renderer/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 128ms (next.js: 43ms, application-code: 85ms)
+ GET /data/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 129ms (next.js: 33ms, application-code: 95ms)
+ GET /renderer/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 134ms (next.js: 38ms, application-code: 96ms)
+ GET /data 200 in 81ms (next.js: 11ms, application-code: 70ms)
+ GET /forms 200 in 82ms (next.js: 13ms, application-code: 69ms)
+ GET /forms/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 136ms (next.js: 34ms, application-code: 102ms)
+ GET /data/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 132ms (next.js: 37ms, application-code: 95ms)
+ GET /forms 200 in 94ms (next.js: 13ms, application-code: 81ms)
+ GET /data/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 136ms (next.js: 34ms, application-code: 103ms)
+ GET /renderer 200 in 65ms (next.js: 9ms, application-code: 55ms)
+ GET /renderer/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 115ms (next.js: 32ms, application-code: 83ms)
+ GET /data 200 in 73ms (next.js: 10ms, application-code: 63ms)
+ GET /renderer 200 in 77ms (next.js: 10ms, application-code: 67ms)
+ GET /renderer/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 109ms (next.js: 32ms, application-code: 77ms)
+ GET /data/952634f2-fcd7-4988-a1a9-89fca63eb115 200 in 108ms (next.js: 29ms, application-code: 79ms)
+ GET /forms 200 in 80ms (next.js: 12ms, application-code: 68ms)
+ GET /renderer/45df55d2-b43b-4183-9180-bdfdea3e773b 200 in 119ms (next.js: 34ms, application-code: 85ms)
+ GET /forms 200 in 80ms (next.js: 11ms, application-code: 69ms)
+ GET /forms/a3e4ad13-43e0-4b60-b9be-c11c4a266215 200 in 135ms (next.js: 36ms, application-code: 99ms)
+[browser] In HTML, <button> cannot be a descendant of <button>.
+This will cause a hydration error.
+
+  ...
+    <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}}>
+      <Insertion>
+      <div className="MuiBox-roo...">
+        <Paper>
+        <Box>
+        <Accordion defaultExpanded={true} sx={{mb:2}}>
+          <MuiAccordion-root sx={{mb:2}} className="MuiAccordi..." ref={null} ownerState={{...}}>
+            <Insertion>
+            <Paper className="MuiAccordi...">
+              <MuiPaper-root as="div" ownerState={{...}} className="MuiPaper-r..." ref={null} style={{...}}>
+                <Insertion>
+                <div className="MuiPaper-r..." style={{...}}>
+                  <MuiAccordion-heading className="MuiAccordi..." ref={null} ownerState={{...}}>
+                    <Insertion>
+                    <h3 className="MuiAccordi...">
+                      <AccordionSummary expandIcon={<ForwardRef(ExpandMoreIcon)>}>
+                        <MuiAccordionSummary-root onClick={function AccordionSummary.AccordionSummary.useSlot} ...>
+                          <Insertion>
+                          <ButtonBase onClick={function AccordionSummary.AccordionSummary.useSlot} focusRipple={false} ...>
+                            <MuiButtonBase-root as="button" className="MuiButtonB..." ownerState={{...}} ...>
+                              <Insertion>
+>                             <button
+>                               className="MuiButtonBase-root MuiAccordionSummary-root Mui-expanded MuiAccordionSummar..."
+>                               onBlur={function useEventCallback.useRef}
+>                               onClick={function useButtonBase.useCallback[getButtonProps].handleClick}
+>                               onContextMenu={function useEventCallback.useRef}
+>                               onFocus={function useEventCallback.useRef}
+>                               onKeyDown={function useButtonBase.useCallback[getButtonProps].handleKeyDown}
+>                               onKeyUp={function useButtonBase.useCallback[getButtonProps].handleKeyUp}
+>                               onMouseDown={function useEventCallback.useRef}
+>                               onMouseLeave={function useEventCallback.useRef}
+>                               onMouseUp={function useEventCallback.useRef}
+>                               onDragLeave={function useEventCallback.useRef}
+>                               onTouchEnd={function useEventCallback.useRef}
+>                               onTouchMove={function useEventCallback.useRef}
+>                               onTouchStart={function useEventCallback.useRef}
+>                               tabIndex={0}
+>                               type="button"
+>                               disabled={false}
+>                               aria-expanded={true}
+>                               ref={function useForkRef.useMemo}
+>                             >
+                                ...
+                                  <MuiIconButton-root id={undefined} className="MuiIconBut..." centerRipple={true} ...>
+                                    <Insertion>
+                                    <ButtonBase id={undefined} className="MuiIconBut..." centerRipple={true} ...>
+                                      <MuiButtonBase-root as="button" className="MuiButtonB..." ...>
+                                        <Insertion>
+>                                       <button
+>                                         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css..."
+>                                         onBlur={function useEventCallback.useRef}
+>                                         onClick={function useButtonBase.useCallback[getButtonProps].handleClick}
+>                                         onContextMenu={function useEventCallback.useRef}
+>                                         onFocus={function useEventCallback.useRef}
+>                                         onKeyDown={function useButtonBase.useCallback[getButtonProps].handleKeyDown}
+>                                         onKeyUp={function useButtonBase.useCallback[getButtonProps].handleKeyUp}
+>                                         onMouseDown={function useEventCallback.useRef}
+>                                         onMouseLeave={function useEventCallback.useRef}
+>                                         onMouseUp={function useEventCallback.useRef}
+>                                         onDragLeave={function useEventCallback.useRef}
+>                                         onTouchEnd={function useEventCallback.useRef}
+>                                         onTouchMove={function useEventCallback.useRef}
+>                                         onTouchStart={function useEventCallback.useRef}
+>                                         tabIndex={0}
+>                                         type="button"
+>                                         disabled={null}
+>                                         id={undefined}
+>                                         ref={function useForkRef.useMemo}
+>                                       >
+                  ...
+        ...
+ 
+[browser] <button> cannot contain a nested <button>.
+See this log for the ancestor stack trace. 
+ GET /forms/a3e4ad13-43e0-4b60-b9be-c11c4a266215 200 in 672ms (next.js: 34ms, application-code: 637ms)
+[browser] In HTML, <button> cannot be a descendant of <button>.
+This will cause a hydration error.
+
+  ...
+    <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}}>
+      <Insertion>
+      <div className="MuiBox-roo...">
+        <Paper>
+        <Box>
+        <Accordion defaultExpanded={true} sx={{mb:2}}>
+          <MuiAccordion-root sx={{mb:2}} className="MuiAccordi..." ref={null} ownerState={{...}}>
+            <Insertion>
+            <Paper className="MuiAccordi...">
+              <MuiPaper-root as="div" ownerState={{...}} className="MuiPaper-r..." ref={null} style={{...}}>
+                <Insertion>
+                <div className="MuiPaper-r..." style={{...}}>
+                  <MuiAccordion-heading className="MuiAccordi..." ref={null} ownerState={{...}}>
+                    <Insertion>
+                    <h3 className="MuiAccordi...">
+                      <AccordionSummary expandIcon={<ForwardRef(ExpandMoreIcon)>}>
+                        <MuiAccordionSummary-root onClick={function AccordionSummary.AccordionSummary.useSlot} ...>
+                          <Insertion>
+                          <ButtonBase onClick={function AccordionSummary.AccordionSummary.useSlot} focusRipple={false} ...>
+                            <MuiButtonBase-root as="button" className="MuiButtonB..." ownerState={{...}} ...>
+                              <Insertion>
+>                             <button
+>                               className="MuiButtonBase-root MuiAccordionSummary-root Mui-expanded MuiAccordionSummar..."
+>                               onBlur={function useEventCallback.useRef}
+>                               onClick={function useButtonBase.useCallback[getButtonProps].handleClick}
+>                               onContextMenu={function useEventCallback.useRef}
+>                               onFocus={function useEventCallback.useRef}
+>                               onKeyDown={function useButtonBase.useCallback[getButtonProps].handleKeyDown}
+>                               onKeyUp={function useButtonBase.useCallback[getButtonProps].handleKeyUp}
+>                               onMouseDown={function useEventCallback.useRef}
+>                               onMouseLeave={function useEventCallback.useRef}
+>                               onMouseUp={function useEventCallback.useRef}
+>                               onDragLeave={function useEventCallback.useRef}
+>                               onTouchEnd={function useEventCallback.useRef}
+>                               onTouchMove={function useEventCallback.useRef}
+>                               onTouchStart={function useEventCallback.useRef}
+>                               tabIndex={0}
+>                               type="button"
+>                               disabled={false}
+>                               aria-expanded={true}
+>                               ref={function useForkRef.useMemo}
+>                             >
+                                ...
+                                  <MuiIconButton-root id={undefined} className="MuiIconBut..." centerRipple={true} ...>
+                                    <Insertion>
+                                    <ButtonBase id={undefined} className="MuiIconBut..." centerRipple={true} ...>
+                                      <MuiButtonBase-root as="button" className="MuiButtonB..." ...>
+                                        <Insertion>
+>                                       <button
+>                                         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css..."
+>                                         onBlur={function useEventCallback.useRef}
+>                                         onClick={function useButtonBase.useCallback[getButtonProps].handleClick}
+>                                         onContextMenu={function useEventCallback.useRef}
+>                                         onFocus={function useEventCallback.useRef}
+>                                         onKeyDown={function useButtonBase.useCallback[getButtonProps].handleKeyDown}
+>                                         onKeyUp={function useButtonBase.useCallback[getButtonProps].handleKeyUp}
+>                                         onMouseDown={function useEventCallback.useRef}
+>                                         onMouseLeave={function useEventCallback.useRef}
+>                                         onMouseUp={function useEventCallback.useRef}
+>                                         onDragLeave={function useEventCallback.useRef}
+>                                         onTouchEnd={function useEventCallback.useRef}
+>                                         onTouchMove={function useEventCallback.useRef}
+>                                         onTouchStart={function useEventCallback.useRef}
+>                                         tabIndex={0}
+>                                         type="button"
+>                                         disabled={null}
+>                                         id={undefined}
+>                                         ref={function useForkRef.useMemo}
+>                                       >
+                  ...
+        ...
+ 
+[browser] <button> cannot contain a nested <button>.
+See this log for the ancestor stack trace. 
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="a3e4ad13-4..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/forms/a3e..." tree={[...]} params={{id:"a3e4ad..."}} cacheNode={{rsc:{...}, ...}} ...>
+              <SegmentViewNode type="page" pagePath="forms/[id]...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function FormDetailPage} serverProvidedParams={{...}}>
+                  <FormDetailPage params={Promise} searchParams={Promise}>
+                    <Container maxWidth="xl" sx={{py:4}}>
+                      <MuiContainer-root as="div" ownerState={{maxWidth:"xl", ...}} className="MuiContain..." ref={null} ...>
+                        <Insertion>
+                        <div className="MuiContain...">
+                          <Box sx={{display:"flex", ...}}>
+                            <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}} ...>
+                              <Insertion>
+                              <div
++                               className="MuiBox-root css-wv0r8s"
+-                               className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAl..."
+-                               role="alert"
+-                               style={{--Paper-shadow:"none"}}
+                              >
+                                <Breadcrumbs sx={{flex:1}}>
+                                  <MuiBreadcrumbs-root ref={null} component="nav" color="textSecondary" ...>
+                                    <Insertion>
+                                    <Typography component="nav" color="textSecondary" className="MuiBreadcr...">
+                                      <MuiTypography-root as="nav" ref={null} className="MuiTypogra..." ...>
+                                        <Insertion>
++                                       <nav
++                                         className="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-ym..."
++                                         style={{}}
++                                       >
+-                                       <div className="MuiAlert-icon css-vab54s-MuiAlert-icon">
+                                ...
+                          ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at nav (<anonymous>)
+    at FormDetailPage (app/forms/[id]/page.tsx:30:9)
+  28 |     <Container maxWidth="xl" sx={{ py: 4 }}>
+  29 |       <Box sx={{ display: 'flex', alignItems: 'center', mb: 3, gap: 2, flexWrap: 'wrap' }}>
+> 30 |         <Breadcrumbs sx={{ flex: 1 }}>
+     |         ^
+  31 |           <Link href="/forms" style={{ textDecoration: 'none', color: 'inherit' }}>Forms</...
+  32 |           <Typography color="text.primary">{form.name}</Typography>
+  33 |         </Breadcrumbs>
+ GET /forms/a3e4ad13-43e0-4b60-b9be-c11c4a266215 200 in 283ms (next.js: 40ms, application-code: 243ms)
+[browser] In HTML, <button> cannot be a descendant of <button>.
+This will cause a hydration error.
+
+  ...
+    <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}}>
+      <Insertion>
+      <div className="MuiBox-roo...">
+        <Paper>
+        <Box>
+        <Accordion defaultExpanded={true} sx={{mb:2}}>
+          <MuiAccordion-root sx={{mb:2}} className="MuiAccordi..." ref={null} ownerState={{...}}>
+            <Insertion>
+            <Paper className="MuiAccordi...">
+              <MuiPaper-root as="div" ownerState={{...}} className="MuiPaper-r..." ref={null} style={{...}}>
+                <Insertion>
+                <div className="MuiPaper-r..." style={{...}}>
+                  <MuiAccordion-heading className="MuiAccordi..." ref={null} ownerState={{...}}>
+                    <Insertion>
+                    <h3 className="MuiAccordi...">
+                      <AccordionSummary expandIcon={<ForwardRef(ExpandMoreIcon)>}>
+                        <MuiAccordionSummary-root onClick={function AccordionSummary.AccordionSummary.useSlot} ...>
+                          <Insertion>
+                          <ButtonBase onClick={function AccordionSummary.AccordionSummary.useSlot} focusRipple={false} ...>
+                            <MuiButtonBase-root as="button" className="MuiButtonB..." ownerState={{...}} ...>
+                              <Insertion>
+>                             <button
+>                               className="MuiButtonBase-root MuiAccordionSummary-root Mui-expanded MuiAccordionSummar..."
+>                               onBlur={function useEventCallback.useRef}
+>                               onClick={function useButtonBase.useCallback[getButtonProps].handleClick}
+>                               onContextMenu={function useEventCallback.useRef}
+>                               onFocus={function useEventCallback.useRef}
+>                               onKeyDown={function useButtonBase.useCallback[getButtonProps].handleKeyDown}
+>                               onKeyUp={function useButtonBase.useCallback[getButtonProps].handleKeyUp}
+>                               onMouseDown={function useEventCallback.useRef}
+>                               onMouseLeave={function useEventCallback.useRef}
+>                               onMouseUp={function useEventCallback.useRef}
+>                               onDragLeave={function useEventCallback.useRef}
+>                               onTouchEnd={function useEventCallback.useRef}
+>                               onTouchMove={function useEventCallback.useRef}
+>                               onTouchStart={function useEventCallback.useRef}
+>                               tabIndex={0}
+>                               type="button"
+>                               disabled={false}
+>                               aria-expanded={true}
+>                               ref={function useForkRef.useMemo}
+>                             >
+                                ...
+                                  <MuiIconButton-root id={undefined} className="MuiIconBut..." centerRipple={true} ...>
+                                    <Insertion>
+                                    <ButtonBase id={undefined} className="MuiIconBut..." centerRipple={true} ...>
+                                      <MuiButtonBase-root as="button" className="MuiButtonB..." ...>
+                                        <Insertion>
+>                                       <button
+>                                         className="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css..."
+>                                         onBlur={function useEventCallback.useRef}
+>                                         onClick={function useButtonBase.useCallback[getButtonProps].handleClick}
+>                                         onContextMenu={function useEventCallback.useRef}
+>                                         onFocus={function useEventCallback.useRef}
+>                                         onKeyDown={function useButtonBase.useCallback[getButtonProps].handleKeyDown}
+>                                         onKeyUp={function useButtonBase.useCallback[getButtonProps].handleKeyUp}
+>                                         onMouseDown={function useEventCallback.useRef}
+>                                         onMouseLeave={function useEventCallback.useRef}
+>                                         onMouseUp={function useEventCallback.useRef}
+>                                         onDragLeave={function useEventCallback.useRef}
+>                                         onTouchEnd={function useEventCallback.useRef}
+>                                         onTouchMove={function useEventCallback.useRef}
+>                                         onTouchStart={function useEventCallback.useRef}
+>                                         tabIndex={0}
+>                                         type="button"
+>                                         disabled={null}
+>                                         id={undefined}
+>                                         ref={function useForkRef.useMemo}
+>                                       >
+                  ...
+        ...
+ 
+[browser] <button> cannot contain a nested <button>.
+See this log for the ancestor stack trace. 
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="a3e4ad13-4..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/forms/a3e..." tree={[...]} params={{id:"a3e4ad..."}} cacheNode={{rsc:{...}, ...}} ...>
+              <SegmentViewNode type="page" pagePath="forms/[id]...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function FormDetailPage} serverProvidedParams={{...}}>
+                  <FormDetailPage params={Promise} searchParams={Promise}>
+                    <Container maxWidth="xl" sx={{py:4}}>
+                      <MuiContainer-root as="div" ownerState={{maxWidth:"xl", ...}} className="MuiContain..." ref={null} ...>
+                        <Insertion>
+                        <div className="MuiContain...">
+                          <Box sx={{display:"flex", ...}}>
+                            <Styled(div) as="div" ref={null} className="MuiBox-root" theme={{...}} ...>
+                              <Insertion>
+                              <div
++                               className="MuiBox-root css-wv0r8s"
+-                               className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAl..."
+-                               role="alert"
+-                               style={{--Paper-shadow:"none"}}
+                              >
+                                <Breadcrumbs sx={{flex:1}}>
+                                  <MuiBreadcrumbs-root ref={null} component="nav" color="textSecondary" ...>
+                                    <Insertion>
+                                    <Typography component="nav" color="textSecondary" className="MuiBreadcr...">
+                                      <MuiTypography-root as="nav" ref={null} className="MuiTypogra..." ...>
+                                        <Insertion>
++                                       <nav
++                                         className="MuiTypography-root MuiTypography-body1 MuiBreadcrumbs-root css-ym..."
++                                         style={{}}
++                                       >
+-                                       <div className="MuiAlert-icon css-vab54s-MuiAlert-icon">
+                                ...
+                          ...
+              ...
+            ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at nav (<anonymous>)
+    at FormDetailPage (app/forms/[id]/page.tsx:30:9)
+  28 |     <Container maxWidth="xl" sx={{ py: 4 }}>
+  29 |       <Box sx={{ display: 'flex', alignItems: 'center', mb: 3, gap: 2, flexWrap: 'wrap' }}>
+> 30 |         <Breadcrumbs sx={{ flex: 1 }}>
+     |         ^
+  31 |           <Link href="/forms" style={{ textDecoration: 'none', color: 'inherit' }}>Forms</...
+  32 |           <Typography color="text.primary">{form.name}</Typography>
+  33 |         </Breadcrumbs>

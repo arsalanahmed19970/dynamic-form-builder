@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dynamic Form Builder System
 
-## Getting Started
+A full-featured dynamic form builder built with Next.js, React, TypeScript, Material UI, and Zustand.
 
-First, run the development server:
+## Features
+
+### Form Creator
+- Create forms with a visual field editor
+- 10 field types: Text, Email, Password, TextArea, Date, DateTime, Dropdown, Checkbox, Radio Group, Toggle
+- 4-column grid layout system (colSpan 1–4)
+- Section & grouping support
+- Field reordering (up/down arrows)
+- Conditional rendering (show/hide fields based on other field values)
+- Validation rules (minLength, maxLength, regex pattern)
+- JSON schema viewer
+- Form versioning (auto-increments on every change)
+
+### Form Renderer
+- Renders any form from its JSON schema
+- Full validation with react-hook-form + zod
+- Submit, Save as Draft, Clear
+- Conditional field visibility
+- Date/DateTime pickers
+- Edit existing submissions
+
+### Data Renderer
+- List all submissions per form
+- Detail view dialog
+- Edit existing submission
+- Delete submission
+- Form version compatibility warning
+
+## Tech Stack
+
+- **Next.js 15** (App Router)
+- **React 19**
+- **TypeScript**
+- **Material UI (MUI) v6**
+- **Zustand** (with localStorage persistence)
+- **react-hook-form** + **zod** (validation)
+- **@mui/x-date-pickers** + **dayjs** (date fields)
+
+## Setup
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+  forms/          → Form Creator (list + detail/editor)
+  renderer/       → Form Renderer (list + render page)
+  data/           → Data Renderer (list + submissions table)
 
-## Learn More
+components/
+  form-creator/   → FormCreator, FieldEditor, SectionEditor, FieldCard
+  form-renderer/  → FormRenderer, FieldRenderer
+  data-renderer/  → DataRenderer
+  shared/         → Navbar, MuiProvider
 
-To learn more about Next.js, take a look at the following resources:
+store/
+  formStore.ts    → Zustand store (forms, submissions, drafts)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+types/
+  index.ts        → All TypeScript interfaces
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+lib/
+  validation.ts   → Zod schema builder, conditional visibility, defaults
+```
 
-## Deploy on Vercel
+## State Management (Zustand)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The store persists to `localStorage` and manages:
+- `forms[]` — all form schemas with versioning
+- `submissions[]` — all submitted data with form version reference
+- `drafts{}` — per-form draft data (keyed by formId)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## JSON Schema
+
+See `sample-schema.json` for a complete example. Key structure:
+
+```json
+{
+  "id": "uuid",
+  "name": "Form Name",
+  "version": 1,
+  "sections": [{ "id": "uuid", "title": "Section", "order": 0 }],
+  "fields": [{
+    "id": "uuid",
+    "type": "text|email|password|textarea|date|datetime|dropdown|checkbox|radio|toggle",
+    "label": "Field Label",
+    "name": "fieldName",
+    "required": true,
+    "colSpan": 1,
+    "validation": { "minLength": 2, "maxLength": 100 },
+    "conditional": { "dependsOn": "otherField", "operator": "equals", "value": "someValue" }
+  }]
+}
+```
+
+## Edge Cases Handled
+
+- **Form versioning**: Every field/section change bumps the version
+- **Conditional rendering**: Fields can depend on other fields with operators: equals, not_equals, contains, not_empty
+- **Version compatibility**: Submissions store the form version; a warning shows when viewing old submissions
+- **Draft persistence**: Drafts survive page refresh via Zustand persist
+- **Dynamic validation**: Zod schema is built at runtime from field definitions; conditional fields are excluded from validation when hidden
