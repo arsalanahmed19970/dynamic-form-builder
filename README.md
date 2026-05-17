@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dynamic Form Builder System
 
 A full-featured dynamic form builder built with Next.js, React, TypeScript, Material UI, and Zustand.
@@ -110,3 +111,6 @@ See `sample-schema.json` for a complete example. Key structure:
 - **Version compatibility**: Submissions store the form version; a warning shows when viewing old submissions
 - **Draft persistence**: Drafts survive page refresh via Zustand persist
 - **Dynamic validation**: Zod schema is built at runtime from field definitions; conditional fields are excluded from validation when hidden
+=======
+# dynamic-form-builder
+>>>>>>> ecc15dacce7e1c8738238e2b3fdd39172e65362f
